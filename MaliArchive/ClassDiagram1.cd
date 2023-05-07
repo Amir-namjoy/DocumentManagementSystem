@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="MaliArchive.common">
+    <Position X="0.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAACAAAAAAAACABAAAAAgAAAACEAAAAAAAA=</HashCode>
+      <FileName>common.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MaliArchive.commonFunction">
+    <Position X="2.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAEAAAAAAAAAAAAAAAAiAAAAAAAAAAEAAQAQAAAAAA=</HashCode>
+      <FileName>common.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MaliArchive.ConnectionManager">
+    <Position X="4.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAABAAAAAAIAgAAAAAAgAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>common.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MaliArchive.ConnectionSetting">
+    <Position X="6.75" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAABAAAAAADAAAAAAAAAAAAAAAAAAAAAAAAAAABIAA=</HashCode>
+      <FileName>common.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MaliArchive.cUser">
+    <Position X="8.5" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAGQAAAAQAAEAAgAAAAAgEAAAAEAAAAAAAAIACAAAA=</HashCode>
+      <FileName>fuser\cUser.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MaliArchive.DA">
+    <Position X="0.5" Y="3" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Class Name="MaliArchive.DA.ConnectionSetting" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>DA.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAEAAAAAAAACAAAAAAAAAAAAAAACAAAAAAAAA=</HashCode>
+      <FileName>DA.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MaliArchive.DataPacker">
+    <Position X="4.5" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEABQAAAgCAAAEAAAACAAAAAAAAAAABgAAAgAIAAAg=</HashCode>
+      <FileName>common.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MaliArchive.Doc">
+    <Position X="6.5" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAEAAAAAAIAAAAAAAQFCAAAAAAEAAEAIACQgAAEAgE=</HashCode>
+      <FileName>fdoc\Doc.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Enum Name="MaliArchive.DatabaseType">
+    <Position X="2.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAgAAAAAAAAEAAAAAAAAACAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>DA.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

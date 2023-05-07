@@ -1,0 +1,521 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{2350EF90-26B3-46C0-96F4-C14A7D36181B}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MaliArchive</RootNamespace>
+    <AssemblyName>MaliArchive</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <TargetFrameworkProfile />
+    <PublishUrl>C:\Users\amir\Desktop\WebSite\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ProductName>My Archive</ProductName>
+    <PublisherName>Amir namjoy</PublisherName>
+    <ApplicationRevision>26</ApplicationRevision>
+    <ApplicationVersion>3.1.7.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <CreateDesktopShortcut>true</CreateDesktopShortcut>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>false</BootstrapperEnabled>
+    <BootstrapperComponentsLocation>Relative</BootstrapperComponentsLocation>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>MyArchive.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>MaliArchive.Program</StartupObject>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>D8B495FB88998C1A8BA3C7182E794F7DDCEE4EBC</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>myArchive_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>false</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>false</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TargetZone>LocalIntranet</TargetZone>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>Properties\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="FaDate, Version=1.0.25.40, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Release\FaDate.dll</HintPath>
+    </Reference>
+    <Reference Include="FarsiLibrary.Resources">
+      <HintPath>..\..\..\farsi library\FarsiLibrary\FarsiLibrary.Resources.dll</HintPath>
+    </Reference>
+    <Reference Include="FarsiLibrary.Utils">
+      <HintPath>..\..\..\farsi library\FarsiLibrary\FarsiLibrary.Utils.dll</HintPath>
+    </Reference>
+    <Reference Include="FarsiLibrary.Win">
+      <HintPath>..\..\..\farsi library\FarsiLibrary\FarsiLibrary.Win.dll</HintPath>
+    </Reference>
+    <Reference Include="ICSharpCode.SharpZipLib">
+      <HintPath>bin\Release\ICSharpCode.SharpZipLib.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic.PowerPacks.Vs, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\Reference Assemblies\Microsoft\VBPowerPacks\v10.0\Microsoft.VisualBasic.PowerPacks.Vs.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Design" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml">
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="amanat\frm_savabeg_amanat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="amanat\frm_savabeg_amanat.Designer.cs">
+      <DependentUpon>frm_savabeg_amanat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="amanat\shaks.cs" />
+    <Compile Include="class\ClassLog.cs" />
+    <Compile Include="class\common.cs" />
+    <Compile Include="class\DA.cs" />
+    <Compile Include="fdoc\Doc.cs" />
+    <Compile Include="fdoc\frm_viewdoc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fdoc\frm_viewdoc.Designer.cs">
+      <DependentUpon>frm_viewdoc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="amanat\frm_amanat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="amanat\frm_amanat.Designer.cs">
+      <DependentUpon>frm_amanat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="amanat\frm_tahvil_amanat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="amanat\frm_tahvil_amanat.Designer.cs">
+      <DependentUpon>frm_tahvil_amanat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="amanat\frm_amanatgirandegan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="amanat\frm_amanatgirandegan.Designer.cs">
+      <DependentUpon>frm_amanatgirandegan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="amanat\frm_add_ashkas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="amanat\frm_add_ashkas.Designer.cs">
+      <DependentUpon>frm_add_ashkas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="amanat\frm_edit_ashkas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="amanat\frm_edit_ashkas.Designer.cs">
+      <DependentUpon>frm_edit_ashkas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="amanat\frm_peygiri_amanat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="amanat\frm_peygiri_amanat.Designer.cs">
+      <DependentUpon>frm_peygiri_amanat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="settings\frm_Error.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="settings\frm_Error.Designer.cs">
+      <DependentUpon>frm_Error.cs</DependentUpon>
+    </Compile>
+    <Compile Include="settings\frm_ShowLog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="settings\frm_ShowLog.Designer.cs">
+      <DependentUpon>frm_ShowLog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fuser\User.cs" />
+    <Compile Include="fuser\cUser.cs" />
+    <Compile Include="fuser\frm_viewlogs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fuser\frm_viewlogs.Designer.cs">
+      <DependentUpon>frm_viewlogs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fuser\frm_changepass_curent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fuser\frm_changepass_curent.Designer.cs">
+      <DependentUpon>frm_changepass_curent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fuser\frm_edit_user.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fuser\frm_edit_user.Designer.cs">
+      <DependentUpon>frm_edit_user.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fuser\frm_usersmanagement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fuser\frm_usersmanagement.Designer.cs">
+      <DependentUpon>frm_usersmanagement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="settings\frm_about.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="settings\frm_about.Designer.cs">
+      <DependentUpon>frm_about.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fuser\frm_addUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fuser\frm_addUser.Designer.cs">
+      <DependentUpon>frm_addUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fdoc\frm_add_new.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fdoc\frm_add_new.Designer.cs">
+      <DependentUpon>frm_add_new.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fuser\frm_changepass.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fuser\frm_changepass.Designer.cs">
+      <DependentUpon>frm_changepass.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fdoc\FrmEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fdoc\FrmEdit.Designer.cs">
+      <DependentUpon>FrmEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="settings\frm_load.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="settings\frm_load.Designer.cs">
+      <DependentUpon>frm_load.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fuser\frm_login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fuser\frm_login.Designer.cs">
+      <DependentUpon>frm_login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_main.Designer.cs">
+      <DependentUpon>frm_main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fgozaresh\FrmGozaresh.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fgozaresh\FrmGozaresh.Designer.cs">
+      <DependentUpon>FrmGozaresh.cs</DependentUpon>
+    </Compile>
+    <Compile Include="class\ProtectedTextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="settings\frmProgress.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="settings\frmProgress.Designer.cs">
+      <DependentUpon>frmProgress.cs</DependentUpon>
+    </Compile>
+    <Compile Include="settings\frm_settings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="settings\frm_settings.Designer.cs">
+      <DependentUpon>frm_settings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="settings\frm_SqlServerSetting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="settings\frm_SqlServerSetting.Designer.cs">
+      <DependentUpon>frm_SqlServerSetting.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="amanat\frm_amanat.resx">
+      <DependentUpon>frm_amanat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="amanat\frm_savabeg_amanat.resx">
+      <DependentUpon>frm_savabeg_amanat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="amanat\frm_tahvil_amanat.resx">
+      <DependentUpon>frm_tahvil_amanat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fdoc\frm_viewdoc.resx">
+      <DependentUpon>frm_viewdoc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="amanat\frm_amanatgirandegan.resx">
+      <DependentUpon>frm_amanatgirandegan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="amanat\frm_add_ashkas.resx">
+      <DependentUpon>frm_add_ashkas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="amanat\frm_edit_ashkas.resx">
+      <DependentUpon>frm_edit_ashkas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="amanat\frm_peygiri_amanat.resx">
+      <DependentUpon>frm_peygiri_amanat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="settings\frm_Error.resx">
+      <DependentUpon>frm_Error.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="settings\frm_ShowLog.resx">
+      <DependentUpon>frm_ShowLog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fuser\frm_changepass_curent.resx">
+      <DependentUpon>frm_changepass_curent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fuser\frm_edit_user.resx">
+      <DependentUpon>frm_edit_user.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fuser\frm_usersmanagement.resx">
+      <DependentUpon>frm_usersmanagement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="settings\frm_about.resx">
+      <DependentUpon>frm_about.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fuser\frm_addUser.resx">
+      <DependentUpon>frm_addUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fdoc\frm_add_new.resx">
+      <DependentUpon>frm_add_new.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fuser\frm_changepass.resx">
+      <DependentUpon>frm_changepass.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fdoc\FrmEdit.resx">
+      <DependentUpon>FrmEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fgozaresh\FrmGozaresh.resx">
+      <DependentUpon>FrmGozaresh.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="settings\frm_load.resx">
+      <DependentUpon>frm_load.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fuser\frm_login.resx">
+      <DependentUpon>frm_login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_main.resx">
+      <DependentUpon>frm_main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="settings\frmProgress.resx">
+      <DependentUpon>frmProgress.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="settings\frm_settings.resx">
+      <DependentUpon>frm_settings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fuser\frm_viewlogs.resx">
+      <DependentUpon>frm_viewlogs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="settings\frm_SqlServerSetting.resx">
+      <DependentUpon>frm_SqlServerSetting.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="ClassDiagram1.cd" />
+    <None Include="Properties\app.manifest" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Archive_shelving_Hull_History_Centre_01.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\new.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\run.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stop.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\show.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\edit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\excel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\flag.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stamp_down.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stamp_pencil.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\City-Archive-Krefeld_2_large.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images.jpg" />
+    <None Include="Resources\New folder\32x32ximportant2.gif.pagespeed.ic.hfTxDmD4i3.png" />
+    <None Include="Resources\New folder\tasks.ico" />
+    <None Include="Resources\New folder\attach.ico" />
+    <None Include="Resources\New folder\danger.ico" />
+    <None Include="Resources\New folder\32x32xenv2.gif.pagespeed.ic.eNXn-CWokm.png" />
+    <None Include="Resources\Save-icon.png" />
+    <None Include="Resources\spinner.gif" />
+    <None Include="Resources\server.ico" />
+    <None Include="Resources\ProgressCircle %281%29.gif" />
+    <None Include="Resources\windows.ico" />
+    <None Include="Resources\lock.ico" />
+    <None Include="Resources\service_manager.ico" />
+    <None Include="Resources\log_zoom.ico" />
+    <None Include="Resources\system_preferences.ico" />
+    <None Include="Resources\program.ico" />
+    <None Include="Resources\users_male.ico" />
+    <None Include="Resources\toolbar.BackgroundImage.png" />
+    <None Include="Resources\OK-16.png" />
+    <None Include="Resources\url.jpg" />
+    <None Include="Resources\question.ico" />
+    <None Include="Resources\system_help.ico" />
+    <None Include="Resources\undo.ico" />
+    <None Include="Resources\Search.png" />
+    <None Include="Resources\refresh.ico" />
+    <None Include="Resources\properties.ico" />
+    <None Include="Resources\list_add_user.ico" />
+    <None Include="Resources\user_male_add.ico" />
+    <None Include="Resources\Zoonkan.png" />
+    <None Include="Resources\ZoonkanHa.png" />
+    <None Include="Resources\human_add_folder_to_archive1.ico" />
+    <None Include="Resources\user_group.ico" />
+    <None Include="Resources\user_male_information.ico" />
+    <None Include="Resources\key.ico" />
+    <None Include="Resources\keys.ico" />
+    <None Include="Resources\share-doc.gif" />
+    <None Include="Resources\flag_red.ico" />
+    <None Include="Resources\folder_share.ico" />
+    <None Include="Resources\advancedsettings.ico" />
+    <Content Include="MyArchive.ico" />
+    <None Include="Resources\Floppy.png" />
+    <None Include="Resources\find.ico" />
+    <None Include="Resources\flag1_green.ico" />
+    <None Include="Resources\exit.ico" />
+    <None Include="Resources\gtk_find_and_replace.ico" />
+    <None Include="Resources\8.ico" />
+    <None Include="Resources\go_back.ico" />
+    <None Include="Resources\activity_monitor.ico" />
+    <None Include="Resources\gnome_help_faq.ico" />
+    <None Include="Resources\cadenas.ico" />
+    <None Include="Resources\F14_grub.png" />
+    <None Include="Resources\folder_txt.ico" />
+    <None Include="Resources\black_folder_add.ico" />
+    <None Include="Resources\ajax-loader-light.gif" />
+    <None Include="Resources\Custom-Icon-Design-Pretty-Office-7-Save.ico" />
+    <None Include="Resources\exit.jpg" />
+    <None Include="Resources\devices secure card.ico" />
+    <None Include="Resources\devices secure card.png" />
+    <None Include="Resources\BlueRoundedButton.png" />
+    <None Include="Resources\common-button-blue-hi.png" />
+    <None Include="Resources\33.png" />
+    <Content Include="Resources\human_add_folder_to_archive.ico" />
+    <None Include="Resources\personal.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.SqlServer.Express.10.5">
+      <Visible>False</Visible>
+      <ProductName>SQL Server 2008 R2 Express</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.4.5">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 4.5</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
